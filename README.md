@@ -20,7 +20,7 @@ pod 'FlexibleGauge'
 
 # Adding To Project
 
-You can add MultipleGaugeAnimated as a cocoapod with 'pod MultipleGaugeAnimated' or you can add it as a resource
+You can add FlexibleGauge as a cocoapod with 'pod FlexibleGauge' or you can add it as a resource
 
 # Usage
 
