@@ -37,7 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0F7CD8EA59CFBC3ADAB1F3A5 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		0F7CD8EA59CFBC3ADAB1F3A5 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* FlexibleGauge_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlexibleGauge_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -65,8 +65,8 @@
 		9DA5DED2FEE54E295E86C0B9 /* Pods-FlexibleGauge_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlexibleGauge_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FlexibleGauge_Tests/Pods-FlexibleGauge_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		CDD0EB41688F6B166464BF08 /* Pods_FlexibleGauge_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlexibleGauge_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D80D83592863061612B689F9 /* Pods-FlexibleGauge_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlexibleGauge_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FlexibleGauge_Tests/Pods-FlexibleGauge_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		DD11ED0A8EE93DBCFED8BCBB /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		E0322C7555E1457F83DC6210 /* FlexibleGauge.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = FlexibleGauge.podspec; path = ../FlexibleGauge.podspec; sourceTree = "<group>"; };
+		DD11ED0A8EE93DBCFED8BCBB /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		E0322C7555E1457F83DC6210 /* FlexibleGauge.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = FlexibleGauge.podspec; path = ../FlexibleGauge.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -250,6 +250,10 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "ebrugungorist@gmail.com";
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = MD8GCN44C3;
+						ProvisioningStyle = Automatic;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -533,12 +537,16 @@
 			baseConfigurationReference = 970A38FD44A5C48456A9F216 /* Pods-FlexibleGauge_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MD8GCN44C3;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FlexibleGauge/FlexibleGauge-Prefix.pch";
 				INFOPLIST_FILE = "FlexibleGauge/FlexibleGauge-Info.plist";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -548,12 +556,16 @@
 			baseConfigurationReference = 66A907563147F3FEEB6F415B /* Pods-FlexibleGauge_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MD8GCN44C3;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FlexibleGauge/FlexibleGauge-Prefix.pch";
 				INFOPLIST_FILE = "FlexibleGauge/FlexibleGauge-Info.plist";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
